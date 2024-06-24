@@ -1,3 +1,5 @@
 *.db
 *.docx
 *.zip
+*.pyc
+*.DS_Store
