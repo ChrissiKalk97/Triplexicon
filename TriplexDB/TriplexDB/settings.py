@@ -23,10 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@=t$__ubmuqx+xyfagx)pbi@-p%0e7b2(r-_g12uc_l^-4y8s6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.169.94', 'triplexicon.uni-frankfurt.de']
 
+CSRF_TRUSTED_ORIGINS = ['https://triplexicon.uni-frankfurt.de']
 
 # Application definition
 
@@ -81,7 +82,9 @@ WSGI_APPLICATION = 'TriplexDB.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-	    'NAME': '/Users/christina/Documents/triplex/TripLexicon_lncRNAs.db',
+	'NAME': '/home/triplexicon/triplex/TripLexicon_lncRNAs_updated.db',
+	'HOST': '192.168.169.94',
+        'PORT': '8000',
     }
 }
 

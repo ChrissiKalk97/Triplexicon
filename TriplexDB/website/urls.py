@@ -19,7 +19,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('home', views.home, name = "home"),
+    path('', views.home, name = "home"),
     path('search_rna_symbol', views.search_rna_symbol_values, name="search_rna_symbol"),
     path('search_dna_home', views.search_dna_home, name="search_dna_home"),
     path('search_dna', views.search_dna, name="search_dna"),
@@ -29,4 +29,6 @@ urlpatterns = [
     path('search_gen_region_home', views.search_gen_region_home, name="search_gen_region_home"),
     path('search_gen_region_results', views.search_gen_region_results, name="search_gen_region_results"),
     path('Gene_detail/<pk>/', views.gene_detail, name = 'gene_detail'),
+    path('Gene_detail_search/', views.gene_detail_search, name = 'gene_detail_search'),
+    path('transcript_detail/<pk>/', views.transcript_detail, name = 'transcript_detail'),
 ]
