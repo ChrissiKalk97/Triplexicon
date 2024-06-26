@@ -105,29 +105,25 @@ More often the case might be that the user has many genomic regions in which the
 
 
 .. list-table:: Example BED file format
-   :widths: 10 10 10 10
+   :widths: 25 25 25
    :header-rows: 0
 
    * - chr1
      - 1
      - 10000
-     -
    * - chr5
      - 10000
      - 20000
-     - 10000
    * - chr7
      - 30000
      - 40000
-     - 10000
    * - chr8
      - 40000
      - 50000
-     - 10000
    * - chr10
      - 50000
      - 60000
-     -
+
 
 To upload the BED file, the user should click the :kbd:`Choose File` button on the **Region query** tab of TriplexAligner.
 
