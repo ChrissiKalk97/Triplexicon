@@ -104,24 +104,30 @@ Multiple regions
 More often the case might be that the user has many genomic regions in which they would like to search for predicted triplexes. For example, these could be peaks which are the result of other assays, such as ATAC-sequencing, ChIP-sequencing/CUT&RUN, or specific sets of promoters of genes which are differentially expressed in an RNA-sequencing experiment. In this case, rather than querying individual regions, a BED file can be used to query multiple regions simultaneously. The BED file should have a minimum of three columns (chromosome, start, stop), with a "chr" prefix. Extra columns are permitted, but are not used in the query. An example BED file is available from the `TripLexicon GitHub repository <https://github.com/ChrissiKalk97/Triplexicon/blob/main/TriplexDB/Test_bed_file_for_triplexaligner.bed>`_ , and is also shown below in table format.
 
 
-{\rtf1\ansi
-{\fonttbl\f0\fswiss Helvetica;}
-\pard\ql\fs20
-\trowd\cellx2000\cellx4000\cellx6000
-\intbl\cell\cell\cell\row
-\trowd\cellx2000\cellx4000\cellx6000
-\intbl chr1\cell 1\cell 10000\cell\row
-\trowd\cellx2000\cellx4000\cellx6000
-\intbl chr5\cell 10000\cell 20000\cell 10000\cell\row
-\trowd\cellx2000\cellx4000\cellx6000
-\intbl chr7\cell 30000\cell 40000\cell 10000\cell\row
-\trowd\cellx2000\cellx4000\cellx6000
-\intbl chr8\cell 40000\cell 50000\cell 10000\cell\row
-\trowd\cellx2000\cellx4000\cellx6000
-\intbl chr10\cell 50000\cell 60000\cell\row
-\pard
-}
+.. list-table:: Example BED file format
+   :widths: 10 10 10 10
+   :header-rows: 0
 
+   * - chr1
+     - 1
+     - 10000
+     -
+   * - chr5
+     - 10000
+     - 20000
+     - 10000
+   * - chr7
+     - 30000
+     - 40000
+     - 10000
+   * - chr8
+     - 40000
+     - 50000
+     - 10000
+   * - chr10
+     - 50000
+     - 60000
+     -
 
 To upload the BED file, the user should click the :kbd:`Choose File` button on the **Region query** tab of TriplexAligner.
 
